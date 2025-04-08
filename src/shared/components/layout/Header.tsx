@@ -21,44 +21,44 @@ const variants = {
   closed: { x: '-100%' },
 };
 
-const navbarItems: MenuItemType[] = [
-  {
-    id: 1,
-    name: 'About',
-    items: [
-      {
-        id: 1,
-        title: 'контент2',
-        link: '/',
-      },
-    ],
-  },
-  {
-    id: 8,
-    name: 'Portfolio',
-    items: [
-      {
-        id: 1,
-        title: 'lorem',
-        link: '/',
-      },
-    ],
-  },
+// const navbarItems: MenuItemType[] = [
+//   {
+//     id: 1,
+//     name: 'About',
+//     items: [
+//       {
+//         id: 1,
+//         title: 'контент2',
+//         link: '/',
+//       },
+//     ],
+//   },
+//   {
+//     id: 8,
+//     name: 'Portfolio',
+//     items: [
+//       {
+//         id: 1,
+//         title: 'lorem',
+//         link: '/',
+//       },
+//     ],
+//   },
 
-  {
-    id: 2,
-    name: 'Services',
-    items: [
-      {
-        id: 1,
-        title: 'lorem',
-        link: '/',
-      },
-    ],
-  },
-  { id: 3, name: 'Purpose' },
-  { id: 4, name: 'Who we are' },
-]
+//   {
+//     id: 2,
+//     name: 'Services',
+//     items: [
+//       {
+//         id: 1,
+//         title: 'lorem',
+//         link: '/',
+//       },
+//     ],
+//   },
+//   { id: 3, name: 'Purpose' },
+//   { id: 4, name: 'Who we are' },
+// ]
 
 const Header = () => {
   const lg = useMediaQuery('lg');
@@ -107,7 +107,7 @@ const Header = () => {
             </CityLink>
           </IconAndCity>
           <HeaderMenu>
-            {navbarItems.map((item: MenuItemType) =>
+            {/* {navbarItems.map((item: MenuItemType) =>
               item.items ? (
                   <LinkItem key={
                     item.id
@@ -117,17 +117,17 @@ const Header = () => {
                   <LinkItem>{item.name}</LinkItem>
                 </Link>
               )
-            )}
+            )} */}
           </HeaderMenu>
           <AnimatePresence>
             {lg && (
               <MobileMenu animate={isMenuVisible ? 'open' : 'closed'} variants={variants}>
                 <MobileMenuList>
-                  {navbarItems.map((item: MenuItemType) => (
+                  {/* {navbarItems.map((item: MenuItemType) => (
                     <Link href="/" key={item.id}>
                       <MobileMenuItem>{item.name}</MobileMenuItem>
                     </Link>
-                  ))}
+                  ))} */}
                 </MobileMenuList>
               </MobileMenu>
             )}

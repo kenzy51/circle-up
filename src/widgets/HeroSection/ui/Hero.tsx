@@ -1,11 +1,11 @@
-import React from 'react';
-import { styled } from 'styled-components';
-import { theme } from '@/styles/theme';
-import styles from './Home.module.css';
-import { Blocks } from './Blocks';
-import { Button } from '@/shared/components/Button';
-import { motion } from 'framer-motion';
-import { Link as ScrollLink } from 'react-scroll';
+import React from "react";
+import { styled } from "styled-components";
+import { theme } from "@/styles/theme";
+import styles from "./Home.module.css";
+import { Blocks } from "./Blocks";
+import { Button } from "@/shared/components/Button";
+import { motion } from "framer-motion";
+import { Link as ScrollLink } from "react-scroll";
 
 export const Hero = () => {
   return (
@@ -21,7 +21,8 @@ export const Hero = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <MainText>
-            We enable you to discover the world with our approach
+            <Text>CircleUp</Text> is your go-to platform for unforgettable
+            in-person event{" "}
           </MainText>
         </motion.div>
         <ScrollLink to="aboutUs" smooth={true} offset={-100}>
@@ -33,6 +34,9 @@ export const Hero = () => {
   );
 };
 
+const Text = styled.span`
+  color: #ffde59;
+`;
 const Container = styled.div`
   padding-top: 5%;
   display: flex;
@@ -41,19 +45,19 @@ const Container = styled.div`
   max-width: ${theme.containers.main};
   margin: 0 auto;
   width: 100%;
-  ${theme.mqMax('xl')} {
+  ${theme.mqMax("xl")} {
     padding: 0 35px;
   }
-  ${theme.mqMax('lg')} {
+  ${theme.mqMax("lg")} {
     padding: 0 25px;
   }
 `;
 
 export const MainText = styled.h1`
   width: 60%;
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 60px;
-  ${theme.mqMax('xl')} {
+  ${theme.mqMax("xl")} {
     font-size: 50px;
     width: 80%;
   }

@@ -55,29 +55,24 @@ const Footer = () => {
           <Nav>
             <List>
               <SecondList>
-                {/* {navList?.withoutItems?.map((item, i) => (
-                                    <Link href={item.link} key={i}>
-                                        <ItemTitle>{item.title}</ItemTitle>
-                                    </Link>
-                                ))} */}
+            
               </SecondList>
             </List>
           </Nav>
         </FooterTop>
         <FooterBottom>
           <FooterBottomRight>
-            <InfoText>Ergotech</InfoText>
+            <InfoText>Circle Up</InfoText>
             <InfoText>All rights are reserved </InfoText>
             <AnotherText>Got interested?</AnotherText>{" "}
             <AnotherText>Write us</AnotherText>
-            <a href="https://t.me/elevensSoft">
+            <a href="https://t.me/Justnonnpc">
               <Image src={telegram} width={60} height={60} alt="icon" />
             </a>
           </FooterBottomRight>
           <FooterBottomLeft>
             <IconLink href="/">
-              {/* <Image src={iconEleven} width={60} height={60} alt="icon" /> */}
-              ErgoTech
+              Circle Up
             </IconLink>
           </FooterBottomLeft>
         </FooterBottom>

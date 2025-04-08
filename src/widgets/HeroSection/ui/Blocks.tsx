@@ -1,17 +1,10 @@
-import React from 'react';
-import { styled } from 'styled-components';
-import { motion } from 'framer-motion';
-import styles from './Home.module.css';
+import React from "react";
+import { motion } from "framer-motion";
+import styles from "./Home.module.css";
 
 export const Blocks = () => {
   return (
     <>
-      <div className={styles.description}>
-        <div></div>
-      </div>
-      <div className={styles.center}>
-        <h1>ErgoTech</h1>
-      </div>
       <div className={styles.grid}>
         <motion.div
           className={styles.card}
@@ -20,9 +13,11 @@ export const Blocks = () => {
           transition={{ duration: 1 }}
         >
           <h2>
-            Automate <span>-&gt;</span>
+            Meet <span>-&gt;</span>
           </h2>
-          <p>Your great business ideas</p>
+          <p>
+            Speed dating, networking, and more. Real people, real connections.
+          </p>
         </motion.div>
 
         <motion.div
@@ -32,9 +27,11 @@ export const Blocks = () => {
           transition={{ duration: 1, delay: 0.6 }}
         >
           <h2>
-            Trust <span>-&gt;</span>
+            Celebrate <span>-&gt;</span>
           </h2>
-          <p>To our approach in building great automation</p>
+          <p>
+            Gala nights and themed parties to connect and make lasting memories.
+          </p>
         </motion.div>
 
         <motion.div
@@ -44,9 +41,12 @@ export const Blocks = () => {
           transition={{ duration: 1, delay: 0.8 }}
         >
           <h2>
-            Templates <span>-&gt;</span>
+            Curated Events <span>-&gt;</span>
           </h2>
-          <p>Discover and immerse in our projects</p>
+          <p>
+            Exclusive events for every taste — from intimate socials to grand
+            gatherings.
+          </p>
         </motion.div>
 
         <motion.div
@@ -56,9 +56,12 @@ export const Blocks = () => {
           transition={{ duration: 1, delay: 1 }}
         >
           <h2>
-            Inspire <span>-&gt;</span>
+            Connect <span>-&gt;</span>
           </h2>
-          <p>By our proficiency in this field</p>
+          <p>
+            Join our circle and expand your social network with like-minded
+            people.
+          </p>
         </motion.div>
       </div>
     </>
